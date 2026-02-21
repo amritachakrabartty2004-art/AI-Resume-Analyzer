@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer | Optimize Your Career</title>
+    <meta name="description" content="Get instant feedback on your resume with our AI-powered analyzer. Discover hidden skills and improve your score.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo" id="main-title">RESUME ANALYZER AI</h1>
+        <p class="subtitle">Extract insights and optimize your profile effortlessly</p>
+    </header>
+
+    <main class="container">
+        {% if error %}
+            <div class="error-msg">
+                <i class="fas fa-exclamation-circle"></i> {{ error }}
+            </div>
+        {% endif %}
+
+        <section class="upload-section">
+            <form action="/" method="POST" enctype="multipart/form-data" id="upload-form">
+                <div class="file-input-container" id="drop-zone">
+                    <input type="file" name="resume" id="resume-upload" accept=".pdf" required>
+                    <div class="upload-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <p class="upload-text" id="file-name-display">Click or Drag & Drop Resume (PDF only)</p>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button type="submit" class="btn-analyze" id="analyze-button">
+                        <i class="fas fa-magic"></i> ANALYZE RESUME
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        {% if score is not none %}
+            <section class="results-section" id="results">
+                <div class="score-card">
+                    <div>
+                        <h2 class="score-label">Resume Optimization Score</h2>
+                        <p class="subtitle">Based on detected industry keywords</p>
+                    </div>
+                    <div class="score-circle">
+                        {{ score }}%
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    {% for category, items in skills.items() %}
+                        <div class="skill-category">
+                            <h3 class="category-title">{{ category }}</h3>
+                            <div class="tags">
+                                {% for item in items %}
+                                    <span class="skill-tag">{{ item }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                {% if recommendations %}
+                    <div class="recommendations">
+                        <h3 class="rec-title"><i class="fas fa-lightbulb"></i> Strategic Recommendations</h3>
+                        <ul class="rec-list">
+                            {% for rec in recommendations %}
+                                <li class="rec-item">{{ rec }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                
+                <div style="text-align: center; margin-top: 1rem;">
+                    <button onclick="window.print()" class="btn-analyze" style="background: var(--glass); border: 1px solid var(--glass-border);">
+                        <i class="fas fa-download"></i> Save Report
+                    </button>
+                </div>
+            </section>
+        {% endif %}
+    </main>
+
+    <script>
+        const fileInput = document.getElementById('resume-upload');
+        const fileNameDisplay = document.getElementById('file-name-display');
+        const dropZone = document.getElementById('drop-zone');
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                fileNameDisplay.textContent = e.target.files[0].name;
+                fileNameDisplay.style.color = 'var(--accent)';
+            }
+        });
+
+        // Basic drag and drop visual feedback
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                dropZone.style.borderColor = 'var(--accent)';
+                dropZone.style.background = 'rgba(255, 255, 255, 0.1)';
+            }, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                dropZone.style.borderColor = 'var(--glass-border)';
+                dropZone.style.background = 'transparent';
+            }, false);
+        });
+    </script>
+</body>
+</html>
