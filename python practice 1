@@ -1,0 +1,472 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPCA89htKFCoQDjSljTI896",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/amritachakrabartty2004-art/AI-Resume-Analyzer/blob/main/python%20practice%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "base = float(input(\"Enter base: \"))\n",
+        "height = float(input(\"Enter height: \"))\n",
+        "\n",
+        "area = 0.5 * base * height\n",
+        "\n",
+        "print(\"Area of the triangle is:\", area)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PbpCMTHUXlzj",
+        "outputId": "4ff4d892-092e-4257-9b41-314d0943ed29"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter base: 10\n",
+            "Enter height: 5\n",
+            "Area of the triangle is: 25.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "principle_amount=567.00\n",
+        "rate_of_interest=5.6\n",
+        "time=3\n",
+        "simple_interest="
+      ],
+      "metadata": {
+        "id": "hk77QptFX2eX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#there is a circular pond in a village .This pond has a radius of 84 meter.Canyou find the area of the pond\n",
+        "radius = 84\n",
+        "area = (22/7) * radius * radius\n",
+        "\n",
+        "print(\"Area of the pond is:\", area, \"square meters\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fNXrz3IaZSPn",
+        "outputId": "88b6f3b1-bed3-4d47-af8c-6d54b1e1a260"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Area of the pond is: 22176.0 square meters\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#if you cross a 490 meter long street in 7 minites ,then what is your speed in meter per seconds .print your answer with only two decimal points\n",
+        "#Hint:Speed = Distance/Time\n",
+        "distance = 490\n",
+        "time_minutes = 7\n",
+        "\n",
+        "time_seconds = time_minutes * 60\n",
+        "speed = distance / time_seconds\n",
+        "\n",
+        "print(\"Speed = {:.2f} m/s\".format(speed))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EHEf1JkzZoX4",
+        "outputId": "50a4f7bb-c86a-40c7-f7b1-4ab71e1d4596"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Speed = 1.17 m/s\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#take two variables\n",
+        "#string\n",
+        "f_name=\"Amrita\"\n",
+        "l_name=\"Chakrabartty\"\n",
+        "print(f_name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6yMEpOeEbZGC",
+        "outputId": "5a0317dc-0ea2-4da6-c798-ea5a2ec7aef6"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Amrita\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "anMKKTLocVmn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "f_name=\"Amrita\"\n",
+        "l_name=\"Chakrabartty\"\n",
+        "age=21\n",
+        "info=f\"{f_name} {l_name} is {age} years old \"\n",
+        "print (info)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8616b9a1-8f79-4b3c-b138-dc465c1da74b",
+        "id": "BXkIthwvchtK"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Amrita Chakrabartty is 21 years old \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#indexing(Important)\n",
+        "name=\"Amrita Chakrabartty\"\n",
+        "print(name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xfhF4c-udr5K",
+        "outputId": "bff0ff52-30b0-44fe-cb6e-d5565d9799bd"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Amrita Chakrabartty\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "g8szS6h2eBUL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#indexing(Important)\n",
+        "name=\"Amrita Chakrabartty\"\n",
+        "print(name)\n",
+        "name[0:5]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        },
+        "outputId": "0d399842-da2f-493b-c2ac-bb676acdd078",
+        "id": "KIsw3Cm3eH_o"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Amrita Chakrabartty\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Amrit'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name[-1:-3]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "cAHgytk9eW3c",
+        "outputId": "23ec31d4-4cb8-406d-c349-b4a08e70783e"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "''"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#create a variale and store the string \"The Himalayas are one of the youngest mountain range on the planet\"\n",
+        "#1.Print 'The Himalayas' using slice operator\n",
+        "#2.print \"mountain range\" using negative index\n",
+        "text = \"The Himalayas are one of the youngest mountain range on the planet\"\n",
+        "\n",
+        "# 1. Print 'The Himalayas' using slice operator\n",
+        "print(text[0:13])\n",
+        "\n",
+        "# 2. Print 'mountain range' using negative index\n",
+        "print(text[-30:-16])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_KaWwx_2fRur",
+        "outputId": "52ff7243-e801-4468-e550-1380e74ada8b"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The Himalayas\n",
+            "t mountain ran\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#imagine you are a shop owner tracking sales of three products throughout the day.at the end of the day ,you want to calculate the total\n",
+        "#sales from these products .product quantity and prices are given below in the next code cell,\n",
+        "#write a program that\n",
+        "#calculates the total sales for each product\n",
+        "#2.summarizes the total sales for the day\n",
+        "#3.print the summary in a formatted manner\n",
+        "# Product quantities\n",
+        "qty1 = 20\n",
+        "qty2 = 35\n",
+        "qty3 = 240\n",
+        "\n",
+        "# Product prices\n",
+        "price1 = 15*20\n",
+        "price2 = 10*35\n",
+        "price3 = 20*240\n",
+        "\n",
+        "# Total sales for each product\n",
+        "sales1 = qty1 * price1\n",
+        "sales2 = qty2 * price2\n",
+        "sales3 = qty3 * price3\n",
+        "\n",
+        "# Total sales for the day\n",
+        "total_sales = sales1 + sales2 + sales3\n",
+        "\n",
+        "# Formatted output\n",
+        "print(\"----- Daily Sales Summary -----\")\n",
+        "print(\"Product 1 Sales =\", sales1)\n",
+        "print(\"Product 2 Sales =\", sales2)\n",
+        "print(\"Product 3 Sales =\", sales3)\n",
+        "print(\"-------------------------------\")\n",
+        "print(\"Total Sales for the Day =\", total_sales)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NPyjgLDyhjbZ",
+        "outputId": "361f728c-689f-4722-ea61-87bf3afdbd33"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "----- Daily Sales Summary -----\n",
+            "Product 1 Sales = 6000\n",
+            "Product 2 Sales = 12250\n",
+            "Product 3 Sales = 1152000\n",
+            "-------------------------------\n",
+            "Total Sales for the Day = 1170250\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s=\"patient was charged $100 for test\"\n",
+        "s=s.replace (\"$100\",\"$50\")\n",
+        "print(s)\n",
+        "s.index(\"$50\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_VUtOlKUlKFn",
+        "outputId": "1248c842-8d3c-4e22-98c2-b32e46eea269"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "patient was charged $50 for test\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "20"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "sQJPVp_wmc34"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#you have created a string variable called string =\"there are 9 planets in the solar system\".after some time ,you have realizd that your sentence is incorrect and there are only 8 planets ,now correct your sentance by replacing the incorrect words\n",
+        "string = \"there are 9 planets in the solar system\"\n",
+        "string = string.replace(\"9\", \"8\")\n",
+        "print(string)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s6Yer7_zmIbq",
+        "outputId": "84318e1b-2817-4c82-86cb-c4dd72a60cec"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "there are 8 planets in the solar system\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "gLRG5ujRoPFA"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
